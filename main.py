@@ -142,7 +142,7 @@ def update_console():
     duration = int(duration)
     progress_ms = time.strftime("%M:%S", time.gmtime(progress_ms))
     duration = time.strftime("%M:%S", time.gmtime(duration))
-    final = f"{progress_ms} / {duration}"
+    final = f"{duration} / {progress_ms}"
 
     progress_bar = ""
     for i in range(0, 30):
@@ -210,7 +210,7 @@ def window_handler():
         os.system("cls")
 
 
-os.system("mode con: cols=50 lines=5")
+os.system("mode con: cols=50 lines=7")
 
 # launch window handler
 if __name__ == "__main__":
